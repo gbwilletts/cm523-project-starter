@@ -2,8 +2,13 @@
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
 body {
-    background: magenta;
+    background: #f5e9dc;
 }
 p {
     font-size: 2em;
 }
+
+.container {
+    text-align: center;
+}
+
