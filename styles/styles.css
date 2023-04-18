@@ -62,7 +62,7 @@ header {
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .navbar .toggle-btn {
@@ -90,7 +90,7 @@ header {
 }
 
 @media(max-width: 1000px) {
-    .navbar li,
+    .navbar .links,
     .navbar .act-btn {
         display: none;
     }
