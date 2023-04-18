@@ -12,3 +12,7 @@ p {
     text-align: center;
 }
 
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
