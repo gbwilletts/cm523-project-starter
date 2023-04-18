@@ -6,11 +6,15 @@ body {
     background: #f5e9dc;
     background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1600&q=60");
     background-size: cover;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 p {
     font-size: 2em;
+}
+
+.container h1 {
+    font-size: 3rem;
 }
 
 .container {
@@ -66,37 +70,108 @@ header {
     font-size: 20px;
 }
 
-.navbar .toggle-btn {
+.navbar .selector-btn {
     color: black;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
-.act-btn {
+.go-btn {
     background-color: #f5e9dc;
+    font-size: 1.1rem;
     color:  #B46543;
     border: 2px solid black;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.act-btn:hover {
+.go-btn:hover {
     scale: 1.1;
     background-color:#B46543;
     color: white;
     border: 2px solid black;
 }
 
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 60px;
+    width: 300px;
+}
+
 @media(max-width: 850px) {
     .navbar .links,
-    .navbar .act-btn {
+    .navbar .go-btn {
         display: none;
     }
 
-    .navbar .toggle-btn {
+
+    .navbar .selector-btn {
         display: block;
     }
+
+}
+
+/* ===== QUIZ ===== */
+
+main {
+    width: 100%;
+    max-height: 100vh;
+    padding: 20px;
+}
+
+.quiz-container{
+    margin: auto;
+    width: 40rem;
+    height: 40rem;
+    background-color: #f5e9dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.question-container{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-container h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 3px;
+}
+
+.quiz-choice-container {
+    width: 75%;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-choice-container span {
+    width: 45%;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+@media(max-width : 850px){
+
+   .quiz-container{
+        width: 90%;
+        height: 75vh;
+     }
+
 }
