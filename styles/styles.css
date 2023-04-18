@@ -63,6 +63,7 @@ header {
 .navbar .links {
     display: flex;
     gap: 3rem;
+    font-size: 20px;
 }
 
 .navbar .toggle-btn {
@@ -89,7 +90,7 @@ header {
     border: 2px solid black;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 850px) {
     .navbar .links,
     .navbar .act-btn {
         display: none;
