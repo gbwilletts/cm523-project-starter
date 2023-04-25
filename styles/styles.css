@@ -14,7 +14,7 @@ p {
 }
 
 .container h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .container {
@@ -178,7 +178,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border-radius: 30px;
 }
 
@@ -191,7 +190,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border-radius: 30px;
 }
 
@@ -204,7 +202,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     border-radius: 30px;
 }
 
