@@ -9,17 +9,26 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
+body h2 {
+    font-family: 'Optima';
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+}
+
 p {
     font-size: 2em;
 }
 
-.container h1 {
-    font-size: 4rem;
-}
-
-.container {
+.title-container {
     text-align: center;
 }
+
+
+/* ===== NAV BAR ===== */
 
 .navbar .links {
     list-style: none;
@@ -168,13 +177,17 @@ main {
     border-radius: 20px;
 }
 
+
+/* ===== DISCOVER PAGE ===== */
+
 .genre-container{
     margin: auto;
-    margin-bottom: 15px; 
+    margin-bottom: 30px; 
     margin-top: 30px; 
     width: 40rem;
     height: 30rem;
     background-color: #f5e9dc;
+    border: 2px solid #4e6e81;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,10 +196,11 @@ main {
 
 .mood-container{
     margin: auto;
-    margin-bottom: 15px; 
+    margin-bottom: 30px; 
     width: 40rem;
     height: 30rem;
     background-color: #f5e9dc;
+    border: 2px solid #4e6e81;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,14 +209,52 @@ main {
 
 .theme-container{
     margin: auto;
-    margin-bottom: 15px; 
+    margin-bottom: 30px; 
     width: 40rem;
     height: 30rem;
     background-color: #f5e9dc;
+    border: 2px solid #4e6e81;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
+}
+
+.carousel {
+    padding: 1rem;
+    background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1600&q=60");
+    box-shadow: black 0px 0.75px 8px 1px;
+    border-radius: 8px;
+    border: 2px solid #4e6e81;
+    width: 90%;
+    height: 281px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.images-container {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.images-container img {
+    height: 281px;
+    width: 500px;
+    scroll-snap-align: start;
+}
+
+.genre-container h1 {
+    font-size: 40px;
+}
+
+.mood-container h1 {
+    font-size: 40px;
+}
+
+.theme-container h1 {
+    font-size: 40px;
 }
 
 
@@ -217,3 +269,15 @@ main {
      }
 
 }
+
+@media(max-width : 850px){
+
+    .carousel {
+         width: 90%;
+
+      }
+
+    }
+
+
+/* ===== ARTISTS PAGE ===== */
