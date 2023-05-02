@@ -57,12 +57,12 @@
           numCorrect++;
   
           // color the answers green
-          answerContainers[questionNumber].style.color = 'lightgreen';
+          answerContainers[questionNumber].style.color = 'darkgreen';
         }
         // if answer is wrong or blank
         else{
           // color the answers red
-          answerContainers[questionNumber].style.color = 'red';
+          answerContainers[questionNumber].style.color = '#8b0000';
         }
       });
   
@@ -75,77 +75,76 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Who invented JavaScript?",
+        question: "Upbeat music can boost your:",
         answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
+          a: "IQ",
+          b: "Seratonin levels",
+          c: "Blood pressure"
         },
-        correctAnswer: "c"
+        correctAnswer: "b"
       },
       {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "Listening to music is proven to lower stress by reducing your:",
         answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm"
+          a: "Cortisol levels (stress hormone)",
+          b: "Cholesterol",
+          c: "Social anxiety"
         },
-        correctAnswer: "c"
+        correctAnswer: "a"
       },
       {
-        question: "Which tool can you use to ensure code quality?",
+        question: "True or false: Background music enhances performance on cognitive tasks:",
         answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
+          a: "True",
+          b: "False",
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "Listening to sad music is proven to increase:",
+        answers: {
+          a: "Depression",
+          b: "Empathy",
+          c: "Intelligence"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "The benefits of listening to lo-fi music include:",
+        answers: {
+          a: "Reduced stress",
+          b: "Healthier sleep",
+          c: "Improved focus",
+          d: "All of the above"
         },
         correctAnswer: "d"
       },
       {
-        question: "Who invented JavaScript?",
+        question: "Among older adults, music has been proven to improve symptoms of:",
         answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
+          a: "Cancer",
+          b: "Alzheimers",
+          c: "Diabetes"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "Live concerts have been proven to:",
+        answers: {
+          a: "Increase stress levels",
+          b: "Reduce brain development",
+          c: "Provide pain relief",
+          c: "Decrease social anxiety"
         },
         correctAnswer: "c"
       },
       {
-        question: "Who invented JavaScript?",
+        question: "True or false: Music is a proven form of effective therapy for mental illnesses",
         answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
+          a: "True",
+          b: "False",
         },
-        correctAnswer: "c"
-      },
-      {
-        question: "Who invented JavaScript?",
-        answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Who invented JavaScript?",
-        answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Who invented JavaScript?",
-        answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
-        },
-        correctAnswer: "c"
+        correctAnswer: "a"
       }
       
     ];
