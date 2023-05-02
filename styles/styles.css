@@ -180,12 +180,23 @@ main {
 
 /* ===== DISCOVER PAGE ===== */
 
+.page-intro h1 {
+text-align: center;
+font-size: 50px;
+margin-bottom: 10px;
+}
+
+.page-intro p {
+    text-align: center;
+}
+
+
 .genre-container{
     margin: auto;
     margin-bottom: 30px; 
     margin-top: 30px; 
     width: 40rem;
-    height: 30rem;
+    height: 35rem;
     background-color: #f5e9dc;
     border: 2px solid #4e6e81;
     display: flex;
@@ -198,7 +209,7 @@ main {
     margin: auto;
     margin-bottom: 30px; 
     width: 40rem;
-    height: 30rem;
+    height: 35rem;
     background-color: #f5e9dc;
     border: 2px solid #4e6e81;
     display: flex;
@@ -207,11 +218,11 @@ main {
     border-radius: 30px;
 }
 
-.theme-container{
+.album-container{
     margin: auto;
     margin-bottom: 30px; 
     width: 40rem;
-    height: 30rem;
+    height: 35rem;
     background-color: #f5e9dc;
     border: 2px solid #4e6e81;
     display: flex;
@@ -227,10 +238,23 @@ main {
     border-radius: 8px;
     border: 2px solid #4e6e81;
     width: 90%;
-    height: 281px;
+    height: 260px;
     max-width: 600px;
     margin: auto;
 }
+
+.album-container .carousel {
+    padding: 1rem;
+    background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1600&q=60");
+    box-shadow: black 0px 0.75px 8px 1px;
+    border-radius: 8px;
+    border: 2px solid #4e6e81;
+    width: 75%;
+    height: 260px;
+    max-width: 600px;
+    margin: auto;
+}
+
 
 .images-container {
     display: flex;
@@ -240,9 +264,10 @@ main {
 }
 
 .images-container img {
-    height: 281px;
-    width: 500px;
+    height: 260px;
+    width: auto;
     scroll-snap-align: start;
+    margin: auto;
 }
 
 .genre-container h1 {
@@ -253,28 +278,26 @@ main {
     font-size: 40px;
 }
 
-.theme-container h1 {
-    font-size: 40px;
+.album-container h1 {
+    font-size: 35px;
 }
-
 
 @media(max-width : 850px){
 
    .quiz-container, 
    .genre-container,
    .mood-container,
-   .theme-container{
+   .album-container{
         width: 90%;
         height: 75vh;
      }
 
 }
 
-@media(max-width : 850px){
+@media(max-width : 600px){
 
     .carousel {
          width: 90%;
-
       }
 
     }
