@@ -127,57 +127,6 @@ header {
 
 }
 
-/* ===== QUIZ ===== */
-
-main {
-    width: 100%;
-    max-height: 100vh;
-    margin-top: 40px;
-}
-
-.quiz-container{
-    margin: auto;
-    width: 40rem;
-    height: 40rem;
-    background-color: #f5e9dc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 30px;
-}
-
-.question-container{
-    width: 80%;
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.question-container h1{
-    font-size: 35px;
-    text-align: center;
-    padding: 3px;
-}
-
-.quiz-choice-container {
-    width: 75%;
-    height: 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.quiz-choice-container span {
-    width: 45%;
-    height: 3rem;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-
 /* ===== DISCOVER PAGE ===== */
 
 .page-intro h1 {
@@ -284,7 +233,6 @@ margin-bottom: 10px;
 
 @media(max-width : 850px){
 
-   .quiz-container, 
    .genre-container,
    .mood-container,
    .album-container{
@@ -303,4 +251,65 @@ margin-bottom: 10px;
     }
 
 
-/* ===== ARTISTS PAGE ===== */
+/* ===== QUIZ PAGE ===== */
+
+.question{
+	font-weight: 600;
+}
+.answers {
+  margin-bottom: 20px;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #4e6e81;
+	color: #fff;
+	border: black solid 2px;
+	border-radius: 9px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #B46543;
+}
+
+.quiz-container {
+    justify-content: center;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    width: 75%;
+    margin-top: 30px; 
+    background-color: #f5e9dc;
+    border: 2px solid #4e6e81;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.quiz-intro h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    }
+
+.quiz-container p {
+    font-weight: bolder;
+    max-width: 700px;
+}
+
+@media(max-width : 750px){
+
+    .quiz-container {
+         padding: 20px;
+         width: 90%;
+        margin: auto;
+      }
+
+    }
