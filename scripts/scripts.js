@@ -155,3 +155,4 @@
     // Event listeners
     submitButton.addEventListener('click', showResults);
   })();
+  

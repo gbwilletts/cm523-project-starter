@@ -22,6 +22,7 @@
     <!-- YOUR HTML GOES HERE -->
 
 <!--NAVBAR-->
+<header>
     <div class="navbar">
       <div class="logo"> <a href="index.html"> Musical Moods</a> </div>
     <ul class="links">
@@ -29,21 +30,47 @@
       <li><a href="artists.html">Artists</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <a href="quiz.html" class="go-btn">Take the Quiz!</a>
-    <div class="selector-btn"> 
+    <a href="quiz.html" class="action_btn">Take the Quiz!</a>
+    <div class="toggle_btn"> 
       <i class="fa-solid fa-bars"></i>
       </div>
     </div>
 
-    <div class="title-container">
-      <h1>Musical Moods</h1>
-      <p>This is some text to introduce the website.</p>
+    <div class="dropdown-menu">
+      <li><a href="discovery.html">Discover</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
     </div>
     
-    </body>
-    </html>
+</header>
+
+<main>
+
+<section id="hero">
+  <h1>Musical Moods</h1>
+  <p>Exploring how our favorite music can change how we think, feel, and behave.</p>
+</section>
+
+</main>
 
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+
+      }
+    </script>
     
   </body>
 </html>
