@@ -4,7 +4,7 @@
 
 body {
     background: #f5e9dc;
-    background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1600&q=60");
+    background-image: url("https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
     background-size: cover;
     font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -186,7 +186,7 @@ section#hero {
 }
 
 #hero h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
 }
 
@@ -196,16 +196,22 @@ section#hero {
 
 /* ===== DISCOVER PAGE ===== */
 
-.page-intro h1 {
-text-align: center;
-font-size: 50px;
-margin-bottom: 10px;
-}
-
-.page-intro p {
+section#discover {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    color: black;
 }
 
+#discover h1 {
+    font-size: 5rem;
+}
+
+#discover p {
+    margin: auto;
+    max-width: 750px;
+}
 
 .genre-container{
     margin: auto;
@@ -362,10 +368,13 @@ margin-bottom: 10px;
 
 .quiz-intro h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 3.5rem;
     margin-bottom: 10px;
     }
 
+p.whatdoyouknow  {
+    margin-bottom: 2px;
+}
 
 .quiz-container p {
     font-weight: bolder;
