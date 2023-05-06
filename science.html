@@ -46,9 +46,27 @@
   
 </header>
 
-<main>
+<section id="discover">
+  <h1> SCIENCE</h1>
+  <p> Learn how music can change and reflect your mental health and wellbeing... </p><br>
+</section>
 
-  
+<h1 class="scienceintro"> How are you feeling today? </h1>
+
+<main class="sciencebody">
+
+    <div class=".body">
+    <button class="moodhappy" class="btn" onclick="openPopup()">&#128077</button>
+    <button class="moodsad" class="btn" onclick="openPopup()">&#128078</button>
+    <div class="popup" id="popup">
+      <h1 style="text-align: center; font-size: 2rem;"> Did You Know?</h1>
+      <p> Research has shown that music has positive effects on the chemicals in our brain that impact our mental health, including dopamine (pleasure), oxytocin (the 'love' hormone), and cortisol (stress).</p>
+      <p> According to the AARP, "While listening to music that you know and like tends to cause the strongest brain response and dopamine release, try listening to new music. Unfamiliar melodies may stimulate your brain, while providing a new source of pleasure as you get used to hearing them" (Adler).</p>
+      <p>Therefore, your listening habits may help you experience many mental and physical benefits including an improved mood, less anxiety and stress, and an overall greater emotional well-being. </p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    </div>
+
 </main>
 
 <footer>
@@ -71,6 +89,16 @@
       : 'fa-solid fa-bars'
 
       }
+
+      let popup = document.getElementById("popup")
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+
     </script>
     
   </body>
