@@ -306,6 +306,22 @@ section#discover {
     font-size: 50px;
 }
 
+.genre-container h2 {
+    font-size: 30px;
+    color: #36454F;
+}
+
+.mood-container h2 {
+    font-size: 30px;
+    color: #36454F;
+}
+
+.album-container h2 {
+    font-size: 30px;
+    color: #36454F;
+}
+
+
 @media(max-width : 850px){
 
    .genre-container,
@@ -480,8 +496,8 @@ p.whatdoyouknow  {
 
 .open-popup {
     visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(0.9);
+    top: 65%;
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .popup button:hover {
@@ -498,3 +514,23 @@ p.whatdoyouknow  {
       }
 
     }
+
+
+section#about {
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    color: black;
+}
+
+#about h1 {
+    font-size: 5rem;
+    align-items: center;
+    text-align: center;
+}
+
+#about p {
+    margin: auto;
+    max-width: 750px;
+}
