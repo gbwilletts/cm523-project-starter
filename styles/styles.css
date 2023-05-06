@@ -515,22 +515,57 @@ p.whatdoyouknow  {
 
     }
 
+/* ===== ABOUT PAGE ===== */
+
 
 section#about {
     display: flex; 
     flex-direction: column;
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     color: black;
+    margin-bottom: 90px;
 }
 
 #about h1 {
     font-size: 5rem;
-    align-items: center;
-    text-align: center;
 }
 
 #about p {
     margin: auto;
-    max-width: 750px;
+    max-width: 700px;
+}
+
+main#project-stuff{
+    margin-bottom: 90px;
+}
+
+h1.deliveries {
+    text-align: center;
+}
+
+div.delivery-list ul {
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+main#project-stuff a {
+ color: black;
+ text-decoration:underline;
+}
+
+main#project-stuff a:hover {
+    color: #4e6e81;
+    text-decoration: underline;
+   }
+
+h1.sources {
+    text-align: center;
+}
+
+div.sources-list ul {
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.3rem;
 }
